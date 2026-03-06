@@ -1,0 +1,12 @@
+imie = input("Podaj imie: ")
+nazwisko = input("Podaj nazwisko: ")
+wiek = input("Podaj wiek: ")
+zawod = input("Podaj zawod: ")
+miejsce_urodzenia = input("Podaj miejsce urodzenia: ")
+zainteresowania = input("Podaj zainteresowania: ")
+
+print("Nazywam sie", imie, nazwisko, "i mam", wiek, "lat.")
+print("Moim rodzinnym miastem jest", miejsce_urodzenia, ", gdzie rozpoczela sie moja zyciowa przygoda.")
+print("Na co dzien rozwijam sie w branzy jako", zawod, ", co sprawia mi ogromna satysfakcje.")
+print("W czasie wolnym chetnie zglebiam swoje pasje, do których naleza", zainteresowania, ".")
+print("Jestem osoba otwarta na nowe doświadczenia i stale poszukuje mozliwosci dalszego rozwoju.")

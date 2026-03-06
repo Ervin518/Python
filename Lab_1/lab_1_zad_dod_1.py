@@ -1,0 +1,16 @@
+imie = input("Podaj imie: ")
+nazwisko = input("Podaj nazwisko: ")
+wiek = input("Podaj wiek: ")
+
+pyt1 = input("Czy zdrowo sie odzywiasz? (tak/nie): ")
+pyt2 = input("Czy lubisz sport? (tak/nie): ")
+pyt3 = input("Czy wolisz psy czy koty? ")
+pyt4 = input("Jaki jest twoj ulubiony gatunek muzyczny? ")
+pyt5 = input("Czy lubisz programowac w Pythonie? (tak/nie): ")
+
+print("Uzytkownik:", imie, nazwisko, ",", wiek, "lat")
+print("Odzywia sie zdrowo:", pyt1)
+print("Lubi sport:", pyt2)
+print("Preferencje zwierzece:", pyt3)
+print("Ulubiona muzyka:", pyt4)
+print("Lubi Pythona:", pyt5)
