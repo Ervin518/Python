@@ -1,7 +1,10 @@
 from itertools import combinations
 
-n = int(input("Podaj liczbe studentow: "))
-a = int(input("Podaj liczbe podgrup: "))
-list_1 = list(range(1, n+1))
+def podzial_na_grupy(n, rozmiar_grupy):
+    studenci = list(range(1, n+1))
+    return list(combinations(studenci, rozmiar_grupy))
 
-print(list(combinations(list_1,a)))
+n = int(input("Podaj laczna liczbe studentow (n): "))
+a = int(input("Podaj rozmiar podgrupy: "))
+
+print(podzial_na_grupy(n, a))
