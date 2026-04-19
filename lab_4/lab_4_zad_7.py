@@ -1,14 +1,12 @@
 import operator
 from itertools import accumulate
 
-kwota_poczatkowa = 10000
-oprocentowanie = 0.001
-miesiace = 9
-okresy_miesiacу = miesiace // 3
+def oblicz_lokate():
+    kwota_poczatkowa = 10000
+    # 0.01% to matematycznie 0.0001
+    oprocentowanie = 0.0001
+    mnozniki = [kwota_poczatkowa] + [1 + oprocentowanie] * 3
+    historia_kwot = list(accumulate(mnozniki, operator.mul))
+    return historia_kwot[-1]
 
-mnozniki = [kwota_poczatkowa] + [1 + oprocentowanie] * okresy_miesiacу
-
-list_1 = list(accumulate(mnozniki, operator.mul))
-
-print("Wyniki kwoty to ", list_1[-1])
-
+print("Kwota po 9 miesiacach:", oblicz_lokate())
