@@ -1,4 +1,10 @@
 def potegi(*args):
+    """
+    Funkcja oblicza x^x uzywajac dynamicznych zmiennych w pamieci (x1, x2...).
+    
+    Args:
+        *args: Lista argumentow pobranych z konsoli.
+    """
     if len(args) >= 100:
         print("Za duzo argumentow")
     elif len(args) == 0:
