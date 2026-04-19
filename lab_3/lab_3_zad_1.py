@@ -1,4 +1,6 @@
-list_word = ['E', 'r', 'v', 'i', 'n']
-polaczone = ''.join(map(lambda x: x, list_word))
+import functools
 
-print(polaczone)
+list_word = ['E', 'r', 'v', 'i', 'n']
+imie = functools.reduce(lambda x, y: x + y, list_word)
+
+print("Moje imie:", imie)
