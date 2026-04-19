@@ -18,7 +18,10 @@ path = os.path.join('Lab_5_zad5', 'Text5ID_DEF.txt')
 with open(path, 'w') as file:
     file.write('Я з Білорусі. Мене звати Ервін. Мені 18 років, я народився у 2008 році. Я дуже люблю свою країну. Мені дуже подобається Польща.')
 
-def dekorator (funkcja):
+def dekorator(funkcja):
+    """
+    Dekorator zlicza pliki z cyfra '0' i kopiuje pliki z 'EF.txt'.
+    """
     def wrapper(*args):
         funkcja(*args)
         folder = args[0]
@@ -33,20 +36,25 @@ def dekorator (funkcja):
                     slowa = text.split()
                     print("Plik", nazwa, "ma slow:", len(slowa))
             if 'EF.txt' in nazwa:
-                nowy_folder = 'Lab_5_copy'
+                nowy_folder = 'DocumentLab5copy'
                 if not os.path.exists(nowy_folder):
                     os.mkdir(nowy_folder)
                 nowa_sciezka = os.path.join(nowy_folder, nazwa)
+                
                 with open(sciezka, 'r') as stary:
                     tresc = stary.read()
                 with open(nowa_sciezka, 'w') as nowy:
                     nowy.write(tresc)
-                print('Skopiowan plik', nazwa, "do", nowy_folder)
+                print('Skopiowano plik', nazwa, "do", nowy_folder)
+                
         print("Liczba plikow z '0':", ile_z_zerem)
     return wrapper
 
 @dekorator
 def files(*args):
+    """
+    Funkcja wypisuje wszystkie pliki i analizuje zawartosc plikow z 'ABC'.
+    """
     folder = args[0]
     try:
         pliki = os.listdir(folder)
