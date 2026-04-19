@@ -1,5 +1,4 @@
 import pickle
-from struct import pack, unpack
 
 def zadanie6():
     lista1 = [1, 2, 3]
