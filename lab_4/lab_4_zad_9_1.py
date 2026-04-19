@@ -3,7 +3,7 @@ import random
 def gener_parzyste(n):
     wygenerowane = 0
     while wygenerowane < n:
-        liczba = random.randint(1, 100000000)
+        liczba = random.randint(0, 100000000)
 
         if liczba % 2 == 0:
             yield liczba
