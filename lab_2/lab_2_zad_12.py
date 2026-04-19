@@ -1,8 +1,6 @@
 import random
 
-losowe_liczby = []
-for _ in range(100):
-    losowe_liczby.append(random.randint(1, 1000))
+losowe_liczby = random.sample(range(1000), 100)
 
 parzyste = []
 for liczba in losowe_liczby:
