@@ -1,7 +1,20 @@
-poziom = lambda n: print("*" * n)
-pion = lambda n: [print("*") for _ in range(n)]
+def poziom(n):
+    print("*" * n)
 
-rysuj = lambda lit: (poziom(5), pion(1), poziom(4), pion(1), poziom(5)) if lit.upper() == 'E' else (pion(4), poziom(5)) if lit.upper() == 'L' else print("Błędna litera")
+def pion(n):
+    for i in range(n):
+        print("*")
 
-wybor = input("Podaj literę (E lub L): ")
-rysuj(wybor)
+litera = input("Podaj litere (E lub L): ").upper()
+
+if litera == 'E':
+    poziom(5)
+    pion(1)
+    poziom(4)
+    pion(1)
+    poziom(5)
+elif litera == 'L':
+    pion(4)
+    poziom(5)
+else:
+    print("Bledna litera")
