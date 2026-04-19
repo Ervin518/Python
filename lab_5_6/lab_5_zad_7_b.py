@@ -1,4 +1,3 @@
-import os
 from struct import pack, unpack
 
 def zadanie7():
