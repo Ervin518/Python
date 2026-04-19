@@ -2,7 +2,7 @@ import operator
 from itertools import accumulate
 
 kwota_poczatkowa = 10000
-oprocentowanie = 0.001
+oprocentowanie = 0.0001
 miesiace = 9
 okresy_miesiacу = miesiace // 3
 
