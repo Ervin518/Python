@@ -1,7 +1,13 @@
 import pickle
 
 def konkretne_liczby(x, y):
-
+    """
+    Funkcja znajduje liczby podzielne przez 7, ale nie przez 5 w zadanym zakresie.
+    
+    Args:
+        x (int): Poczatek przedzialu.
+        y (int): Koniec przedzialu.
+    """
     numbers = list(range(x, y+1))
 
     wynikowe_liczby = [z for z in numbers if z % 7 == 0 and z % 5 != 0]
