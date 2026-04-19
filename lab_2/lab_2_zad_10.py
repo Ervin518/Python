@@ -1,9 +1,9 @@
 while True:
-    x_str = input("Podaj pierwszą liczbę całkowitą (0 kończy program): ")
-    y_str = input("Podaj drugą liczbę całkowitą (0 kończy program): ")
+    x_str = input("Podaj pierwsza liczbe (0 konczy program): ")
+    y_str = input("Podaj druga liczbe (0 konczy program): ")
 
-    if not (x_str.lstrip('-').isdigit() and y_str.lstrip('-').isdigit()):
-        print("Błąd: To nie są liczby całkowite! Spróbuj ponownie.")
+    if not (x_str.isdigit() and y_str.isdigit()):
+        print("Blad: podaj liczby calkowite dodatnie!")
         continue
 
     x = int(x_str)
@@ -13,4 +13,4 @@ while True:
         print("Podano 0. Koniec programu.")
         break
 
-    print("Iloczyn:", x, "*", y, "=", x * y)
+    print("Iloczyn:", x * y)
