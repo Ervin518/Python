@@ -1,7 +1,7 @@
 hasla = ("tajne123", "haslo321")
-podane_haslo = input("Podaj hasło: ")
+podane_haslo = input("Podaj haslo: ")
 
 if podane_haslo in hasla:
-    print("Imię Nazwisko")
+    print("Imie Nazwisko")
 else:
-    print("Błędne hasło!")
+    print("Bledne haslo!")
