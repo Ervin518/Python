@@ -20,7 +20,6 @@ def zadanie4():
 
         for p in pliki_w_srodku:
             pelna_sciezka = os.path.join(katalog, p)
-            # Sprawdzanie rozmiaru w bajtach
             rozmiar = os.path.getsize(pelna_sciezka)
             print("Plik:", p, "- Rozmiar:", rozmiar, "bajtow")
 zadanie4()
