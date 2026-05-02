@@ -29,6 +29,6 @@ def hasla():
         with open("haslo.txt", "w", encoding = "UTF-8") as file:
             file.write(haslo)
         print("Haslo zostalo poprawnie zapisane do pliku.")
-        break # Konczymy petle
+        break 
 
 hasla()
