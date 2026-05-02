@@ -15,7 +15,6 @@ def zadanie3():
         plik.write("Przykładowy tekst.")
         plik.close()
 
-    print("--- ZADANIE 3 ---")
     wszystkie_pliki = os.listdir(folder)
     print("a) Wszystkie pliki w folderze", folder, ":", wszystkie_pliki)
 
