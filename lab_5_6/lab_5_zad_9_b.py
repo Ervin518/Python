@@ -2,13 +2,7 @@ import os
 
 
 def przygotuj_pliki_zad9():
-    pliki = [
-        'Tekst1ID_ABC.txt',
-        'Tekst2ID_405.txt',
-        'Tekst3ID_607.txt',
-        'Tekst4ID_ABC.txt',
-        'Tekst5ID_DEF.txt'
-    ]
+    pliki = ['Tekst1ID_ABC.txt', 'Tekst2ID_405.txt', 'Tekst3ID_607.txt', 'Tekst4ID_ABC.txt','Tekst5ID_DEF.txt']
     tresc = "To jest pierwsze zdanie. Programowanie to super sprawa. Robimy zadanie z Pythona. Otwieramy i zamykamy pliki. Dzis jest dobry dzien."
 
     for nazwa in pliki:
